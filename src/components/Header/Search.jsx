@@ -11,7 +11,7 @@ const Search = () => {
           required
         />
         <button type="submit">
-          <img src={search} />
+          <img src={search} alt="search" />
         </button>
       </div>
     </form>
