@@ -1,11 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import SearchIcon from "../../assets/search.svg";
 import { LocationContext } from "../../context";
 import { getLocationByName } from "../../data/location-data";
 import { useDebounce } from "../../hooks";
 
 const Search = () => {
-  const [searchTerm, setSearchTerm] = useState("");
   const { setSelectedLocation } = useContext(LocationContext);
 
   const doSearch = useDebounce((term) => {
@@ -15,7 +14,6 @@ const Search = () => {
 
   function handleChange(e) {
     const value = e.target.value;
-    setSearchTerm(value);
     doSearch(value);
   }
 
