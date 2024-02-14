@@ -29,6 +29,7 @@ const useWeather = () => {
   const fetchWeatherData = async (latitude, longitude) => {
     try {
       setLoading({
+        ...loading,
         state: true,
         message: "Fetching weather data...",
       });
@@ -74,6 +75,7 @@ const useWeather = () => {
 
   useEffect(() => {
     setLoading({
+      ...loading,
       state: true,
       message: "Finding location...",
     });
