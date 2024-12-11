@@ -51,22 +51,22 @@ const Page = () => {
   return (
     <>
       {loading.state ? (
-        <div className="flex bg-gray-200 rounded-md w-96 p-8 mt-14 mx-auto">
+        <div className="flex bg-gray-200 rounded-md w-full p-8 mt-14 mx-auto">
           {" "}
           <Spinner />{" "}
         </div>
       ) : error ? (
-        <div className="flex bg-red-200 rounded-md w-96 p-8 mt-14 mx-auto">
+        <div className="flex bg-red-200 rounded-md w-full p-8 mt-14 mx-auto">
           <p className="text-center text-3xl text-red-500">{error.message}</p>
         </div>
       ) : (
         <div
           style={{ backgroundImage: `url('${climateImage}')` }}
-          className="grid place-items-center h-screen bg-no-repeat bg-cover"
+          className="flex flex-col items-center min-h-screen bg-no-repeat bg-cover"
         >
           <Header />
-          <main>
-            <section>
+          <main className="flex flex-col items-center w-full">
+            <section className="w-full max-w-6xl p-4">
               <WeatherBoard />
               <Forecast />
             </section>
