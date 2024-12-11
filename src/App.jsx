@@ -1,9 +1,10 @@
-import Page from "./Page";
+import React from "react";
 import {
   FavouriteProvider,
   LocationProvider,
   WeatherProvider,
 } from "./provider";
+const Page = React.lazy(() => import("./Page"));
 
 function App() {
   return (
@@ -17,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default React.memo(App);

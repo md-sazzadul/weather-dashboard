@@ -1,6 +1,7 @@
-import AddToFavourite from "./AddToFavourite";
-import WeatherCondition from "./WeatherCondition";
-import WeatherHeadline from "./WeatherHeadline";
+import React from "react";
+const AddToFavourite = React.lazy(() => import("./AddToFavourite"));
+const WeatherCondition = React.lazy(() => import("./WeatherCondition"));
+const WeatherHeadline = React.lazy(() => import("./WeatherHeadline"));
 
 const WeatherBoard = () => {
   return (
@@ -18,4 +19,4 @@ const WeatherBoard = () => {
   );
 };
 
-export default WeatherBoard;
+export default React.memo(WeatherBoard);
