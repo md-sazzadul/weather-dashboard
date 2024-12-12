@@ -13,15 +13,15 @@ const AddToFavourite = () => {
 
   const { latitude, longitude, location } = weatherData;
 
+  const isInFavourites = () =>
+    favourites.find((fav) => fav.location === location);
+
   useEffect(() => {
-    const found = favourites.find((fav) => fav.location === location);
-    setIsFavourite(found);
+    setIsFavourite(!!isInFavourites());
   }, [favourites, location]);
 
   const handleFavourites = () => {
-    const found = favourites.find((fav) => fav.location === location);
-
-    if (!found) {
+    if (!isInFavourites()) {
       addToFavourites(latitude, longitude, location);
     } else {
       removeFromFavourites(location);
