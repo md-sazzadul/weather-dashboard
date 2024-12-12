@@ -44,8 +44,9 @@ const Page = () => {
   }
 
   useEffect(() => {
-    const bgImage = getBackgroundImage(weatherData.climate);
-    setClimateImage(bgImage);
+    const img = new Image();
+    img.src = getBackgroundImage(weatherData.climate);
+    img.onload = () => setClimateImage(img.src);
   }, [weatherData.climate]);
 
   return (
