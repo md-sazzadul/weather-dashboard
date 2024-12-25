@@ -1,5 +1,4 @@
 import React from "react";
-import Spinner from "./components/Spinner";
 import {
   FavouriteProvider,
   LocationProvider,
@@ -12,9 +11,7 @@ function App() {
     <LocationProvider>
       <WeatherProvider>
         <FavouriteProvider>
-          <React.Suspense fallback={<Spinner />}>
-            <Page />
-          </React.Suspense>
+          <Page></Page>
         </FavouriteProvider>
       </WeatherProvider>
     </LocationProvider>
