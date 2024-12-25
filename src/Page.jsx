@@ -8,7 +8,6 @@ import SnowImage from "./assets/backgrounds/snow.jpg";
 import SunnyImage from "./assets/backgrounds/sunny.jpg";
 import ThunderStormImage from "./assets/backgrounds/thunderstorm.jpg";
 import WinterImage from "./assets/backgrounds/winter.jpg";
-import Forecast from "./components/Weather/Forecast";
 import { WeatherContext } from "./context";
 const Header = React.lazy(() => import("./components/Header/Header"));
 const Spinner = React.lazy(() => import("./components/Spinner"));
@@ -68,7 +67,6 @@ const Page = () => {
           <main>
             <section>
               <WeatherBoard />
-              <Forecast />
             </section>
           </main>
         </div>
