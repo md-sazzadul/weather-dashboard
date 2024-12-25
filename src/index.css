@@ -2,27 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-background text-secondary;
-}
-
-header,
-main,
-footer {
-  @apply p-4;
-}
-
-button {
-  @apply transition-all duration-300 ease-in-out;
-}
-
-input {
-  @apply border border-secondary rounded-md p-2;
-}
-input:focus {
-  @apply outline-none border-primary;
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -30,30 +9,6 @@ input:focus {
   100% {
     transform: rotate(360deg);
   }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 0.5s ease-in-out forwards;
-}
-.animate-fadeOut {
-  animation: fadeOut 0.5s ease-in-out forwards;
 }
 
 .animate-spin {
@@ -69,17 +24,4 @@ input:focus {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-}
-
-.container {
-  @apply max-w-6xl mx-auto;
-}
-.card {
-  @apply bg-white rounded-lg p-6 shadow-md;
-}
-.text-title {
-  @apply text-xl font-bold mb-2;
-}
-.text-subtitle {
-  @apply text-lg font-semibold mb-1;
 }
