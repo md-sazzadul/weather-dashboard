@@ -10,21 +10,13 @@ const Header = () => {
   return (
     <header className="fixed w-full top-0 z-50 bg-gradient-to-b from-black/60 to-black/0 pb-10">
       <nav className="container flex items-center justify-between py-6">
-        <Logo />
+        <Logo></Logo>
 
         <div className="flex items-center gap-4 relative">
-          <Search />
-          <Favourite
-            onShow={() => setShowFavModal(!showFavModal)}
-            aria-controls="favourite-list"
-            aria-expanded={showFavModal}
-          />
+          <Search></Search>
+          <Favourite onShow={() => setShowFavModal(!showFavModal)}></Favourite>
 
-          {showFavModal && (
-            <div id="favourite-list" role="dialog" aria-modal="true">
-              <FavouriteListModal />
-            </div>
-          )}
+          {showFavModal && <FavouriteListModal></FavouriteListModal>}
         </div>
       </nav>
     </header>

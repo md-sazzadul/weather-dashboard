@@ -18,20 +18,16 @@ const Search = () => {
   }
 
   return (
-    <form action="#" role="search">
+    <form action="#">
       <div className="flex items-center space-x-2 py-2 px-3 group focus-within:bg-black/30 transition-all border-b border-white/50 focus-within:border-b-0 focus-within:rounded-md">
-        <label htmlFor="search" className="sr-only">
-          Search Location
-        </label>
         <input
-          id="search"
           className="bg-transparent  placeholder:text-white text-white w-full text-xs md:text-base outline-none border-none"
           type="search"
           placeholder="Search Location"
           onChange={handleChange}
           required
         />
-        <button type="submit" aria-label="Search">
+        <button type="submit">
           <img src={SearchIcon} alt="search" />
         </button>
       </div>
