@@ -63,7 +63,7 @@ const useWeather = () => {
       };
       setWeatherData(updatedWeatherData);
     } catch (error) {
-      setError({ message: error.message });
+      setError(error);
     } finally {
       setLoading({
         ...loading,

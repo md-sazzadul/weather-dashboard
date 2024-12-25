@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { FavouriteContext, LocationContext } from "../../context";
 
 const FavouriteListModal = () => {
@@ -25,4 +25,4 @@ const FavouriteListModal = () => {
   );
 };
 
-export default React.memo(FavouriteListModal);
+export default FavouriteListModal;

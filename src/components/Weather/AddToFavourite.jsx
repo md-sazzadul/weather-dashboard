@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import RedHeartIcon from "../../assets/heart-red.svg";
 import HeartIcon from "../../assets/heart.svg";
 import { FavouriteContext, WeatherContext } from "../../context";
@@ -16,7 +16,7 @@ const AddToFavourite = () => {
   useEffect(() => {
     const found = favourites.find((fav) => fav.location === location);
     setIsFavourite(found);
-  }, [favourites, location]);
+  }, []);
 
   const handleFavourites = () => {
     const found = favourites.find((fav) => fav.location === location);
@@ -45,4 +45,4 @@ const AddToFavourite = () => {
   );
 };
 
-export default React.memo(AddToFavourite);
+export default AddToFavourite;

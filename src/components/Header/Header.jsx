@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-const Favourite = React.lazy(() => import("./Favourite"));
-const FavouriteListModal = React.lazy(() => import("./FavouriteListModal"));
-const Logo = React.lazy(() => import("./Logo"));
-const Search = React.lazy(() => import("./Search"));
+import { useState } from "react";
+import Favourite from "./Favourite";
+import FavouriteListModal from "./FavouriteListModal";
+import Logo from "./Logo";
+import Search from "./Search";
 
 const Header = () => {
   const [showFavModal, setShowFavModal] = useState(false);
@@ -23,4 +23,4 @@ const Header = () => {
   );
 };
 
-export default React.memo(Header);
+export default Header;

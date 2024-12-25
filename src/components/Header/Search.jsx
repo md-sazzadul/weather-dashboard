@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import SearchIcon from "../../assets/search.svg";
 import { LocationContext } from "../../context";
 import { getLocationByName } from "../../data/location-data";
@@ -35,4 +35,4 @@ const Search = () => {
   );
 };
 
-export default React.memo(Search);
+export default Search;

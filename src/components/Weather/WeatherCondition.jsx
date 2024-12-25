@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import CloudIcon from "../../assets/icons/cloud.svg";
 import HumidityIcon from "../../assets/icons/humidity.svg";
 import MaxTempIcon from "../../assets/icons/temp-max.svg";
@@ -56,4 +56,4 @@ const WeatherCondition = () => {
   );
 };
 
-export default React.memo(WeatherCondition);
+export default WeatherCondition;

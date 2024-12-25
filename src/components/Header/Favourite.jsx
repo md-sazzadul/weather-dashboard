@@ -1,4 +1,3 @@
-import React from "react";
 import heart from "../../assets/heart.svg";
 
 const Favourite = ({ onShow }) => {
@@ -10,4 +9,4 @@ const Favourite = ({ onShow }) => {
   );
 };
 
-export default React.memo(Favourite);
+export default Favourite;

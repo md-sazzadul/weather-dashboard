@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ClearSkyImage from "./assets/backgrounds/clear-sky.jpg";
 import FewCloudsImage from "./assets/backgrounds/few-clouds.jpg";
 import MistImage from "./assets/backgrounds/mist.jpeg";
@@ -8,15 +8,12 @@ import SnowImage from "./assets/backgrounds/snow.jpg";
 import SunnyImage from "./assets/backgrounds/sunny.jpg";
 import ThunderStormImage from "./assets/backgrounds/thunderstorm.jpg";
 import WinterImage from "./assets/backgrounds/winter.jpg";
+import Header from "./components/Header/Header";
+import WeatherBoard from "./components/Weather/WeatherBoard";
 import { WeatherContext } from "./context";
-const Header = React.lazy(() => import("./components/Header/Header"));
-const Spinner = React.lazy(() => import("./components/Spinner"));
-const WeatherBoard = React.lazy(() =>
-  import("./components/Weather/WeatherBoard")
-);
 
 const Page = () => {
-  const { weatherData, loading, error } = useContext(WeatherContext);
+  const { weatherData, loading } = useContext(WeatherContext);
   const [climateImage, setClimateImage] = useState("");
 
   function getBackgroundImage(climate) {
@@ -51,22 +48,17 @@ const Page = () => {
     <>
       {loading.state ? (
         <div className="flex bg-gray-200 rounded-md w-96 p-8 mt-14 mx-auto">
-          {" "}
-          <Spinner />{" "}
-        </div>
-      ) : error ? (
-        <div className="flex bg-red-200 rounded-md w-96 p-8 mt-14 mx-auto">
-          <p className="text-center text-3xl text-red-500">{error.message}</p>
+          <p className="text-center text-3xl text-black">{loading.message}</p>
         </div>
       ) : (
         <div
           style={{ backgroundImage: `url('${climateImage}')` }}
           className="grid place-items-center h-screen bg-no-repeat bg-cover"
         >
-          <Header />
+          <Header></Header>
           <main>
             <section>
-              <WeatherBoard />
+              <WeatherBoard></WeatherBoard>
             </section>
           </main>
         </div>
@@ -75,4 +67,4 @@ const Page = () => {
   );
 };
 
-export default React.memo(Page);
+export default Page;
