@@ -30,3 +30,13 @@ Check out the live version of the project here:
 - **Dynamic Weather Icons:** Icons adapt to reflect the current weather conditions.
 - **Responsive Design:** Optimized for devices of all sizes—mobile, tablet, and desktop.
 - **Date and Time Formatting:** Displays human-readable dates and times for weather data.
+
+---
+
+## Technologies Used 🛠️
+
+- **Frontend Framework:** React with Vite for fast development and build processes.
+- **Styling:** Tailwind CSS for modular and responsive design.
+- **State Management:** React Context API for global state handling.
+- **Date Formatting:** `Intl.DateTimeFormat` for locale-specific date and time representation.
+- **JavaScript (ES6+):** Modern JavaScript features for enhanced performance.
