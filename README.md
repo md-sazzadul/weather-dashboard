@@ -1,27 +1,27 @@
-# Weather Dashboard 🌦️
+# **Weather Dashboard** 🌦️
 
 A responsive **Weather Dashboard** application designed to deliver real-time weather updates, detailed weather conditions, and an intuitive interface for managing your favorite locations. Built with **React**, **Vite**, and **Tailwind CSS**, this app combines performance, scalability, and a clean UI.
 
 ---
 
-## Table of Contents 📋
+## **Table of Contents** 📋
 
-- [Demo](#demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Future Enhancements](#future-enhancements)
+- [Demo](#demo🌐)
+- [Features](#features🚀)
+- [Technologies Used](#technologies-used🛠️)
+- [Future Enhancements](#future-enhancements🌟)
 - [Contact](#contact)
 
 ---
 
-## Demo 🌐
+## **Demo** 🌐
 
 Check out the live version of the project here:  
 [**Weather Dashboard Demo**](https://weather-dashboard-sazzad15.vercel.app/)
 
 ---
 
-## Features 🚀
+## **Features** 🚀
 
 - **Real-Time Weather Updates:** Provides up-to-date weather conditions, including temperature, humidity, wind speed, and cloud coverage.
 - **Favorites Management:** Easily save and manage your favorite locations for quick access.
@@ -31,7 +31,7 @@ Check out the live version of the project here:
 
 ---
 
-## Technologies Used 🛠️
+## **Technologies Used** 🛠️
 
 - **Frontend Framework:** React with Vite for fast development and build processes.
 - **Styling:** Tailwind CSS for modular and responsive design.
@@ -41,7 +41,7 @@ Check out the live version of the project here:
 
 ---
 
-## Future Enhancements 🌟
+## **Future Enhancements** 🌟
 
 - **Extended Forecast:** Add multi-day weather forecasts for each location.
 - **Dark Mode:** Include a toggle option for light and dark themes.
@@ -50,7 +50,7 @@ Check out the live version of the project here:
 
 ---
 
-## Contact
+## **Contact**
 
 For any inquiries or issues, feel free to contact me:
 
