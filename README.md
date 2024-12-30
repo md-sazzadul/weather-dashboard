@@ -20,3 +20,13 @@ A responsive **Weather Dashboard** application designed to deliver real-time wea
 
 Check out the live version of the project here:  
 [**Weather Dashboard Demo**](https://weather-dashboard-sazzad15.vercel.app/)
+
+---
+
+## Features 🚀
+
+- **Real-Time Weather Updates:** Provides up-to-date weather conditions, including temperature, humidity, wind speed, and cloud coverage.
+- **Favorites Management:** Easily save and manage your favorite locations for quick access.
+- **Dynamic Weather Icons:** Icons adapt to reflect the current weather conditions.
+- **Responsive Design:** Optimized for devices of all sizes—mobile, tablet, and desktop.
+- **Date and Time Formatting:** Displays human-readable dates and times for weather data.
