@@ -6,10 +6,10 @@ A responsive **Weather Dashboard** application designed to deliver real-time wea
 
 ## **Table of Contents** 📋
 
-- [Demo](#demo🌐)
-- [Features](#features🚀)
-- [Technologies Used](#technologies-used🛠️)
-- [Future Enhancements](#future-enhancements🌟)
+- [Demo](#demo)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Future Enhancements](#future-enhancements)
 - [Contact](#contact)
 
 ---
